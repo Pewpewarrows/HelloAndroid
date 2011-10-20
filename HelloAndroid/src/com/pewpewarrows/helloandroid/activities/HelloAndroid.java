@@ -11,7 +11,14 @@ import com.pewpewarrows.helloandroid.R;
 
 public class HelloAndroid extends ListActivity {
 	private ListView mDemoActivityList;
-	private String[] mDemoActivities = { "Hello Android", "Date Button" };
+	private String[] mDemoActivities = { 
+		"Hello Android", 
+		"Date Button" 
+		// TODO: adjustable radio button layout example
+		// TODO: relative layout form example
+		// TODO: table layout form example
+		// TODO: edittext input type options example (also: hooking into "Done" button)
+	};
 
 	/** Called when the activity is first created. */
 	@Override
