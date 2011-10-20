@@ -3,7 +3,7 @@ package com.pewpewarrows.helloandroid.test;
 import android.test.ActivityInstrumentationTestCase2;
 import android.widget.TextView;
 
-import com.pewpewarrows.helloandroid.HelloAndroid;
+import com.pewpewarrows.helloandroid.activities.HelloAndroid;
 
 public class HelloAndroidTest extends
 		ActivityInstrumentationTestCase2<HelloAndroid> {
