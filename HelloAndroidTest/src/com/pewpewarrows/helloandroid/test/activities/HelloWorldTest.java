@@ -1,19 +1,19 @@
-package com.pewpewarrows.helloandroid.test;
+package com.pewpewarrows.helloandroid.test.activities;
 
 import android.test.ActivityInstrumentationTestCase2;
 import android.widget.TextView;
 
-import com.pewpewarrows.helloandroid.activities.HelloAndroid;
+import com.pewpewarrows.helloandroid.activities.HelloWorld;
 
-public class HelloAndroidTest extends
-		ActivityInstrumentationTestCase2<HelloAndroid> {
+public class HelloWorldTest extends
+		ActivityInstrumentationTestCase2<HelloWorld> {
 
-	private HelloAndroid mActivity;
+	private HelloWorld mActivity;
 	private TextView mView;
 	private String resourceString;
 
-	public HelloAndroidTest() {
-		super("com.pewpewarrows.helloandroid", HelloAndroid.class);
+	public HelloWorldTest() {
+		super("com.pewpewarrows.helloandroid", HelloWorld.class);
 	}
 
 	@Override
@@ -28,6 +28,10 @@ public class HelloAndroidTest extends
 
 	public void testPreconditions() {
 		assertNotNull(mView);
+	}
+
+	public void testText() {
+		assertEquals(resourceString, (String) mView.getText());
 	}
 
 }

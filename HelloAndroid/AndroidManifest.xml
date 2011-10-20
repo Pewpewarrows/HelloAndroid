@@ -13,5 +13,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.HelloWorld"></activity>
+        <activity android:name=".activities.DateButton"></activity>
     </application>
 </manifest>

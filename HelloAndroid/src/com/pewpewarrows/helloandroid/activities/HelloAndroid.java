@@ -11,7 +11,7 @@ import com.pewpewarrows.helloandroid.R;
 
 public class HelloAndroid extends ListActivity {
 	private ListView mDemoActivityList;
-	private String[] mDemoActivities = { "HelloAndroid" };
+	private String[] mDemoActivities = { "Hello Android", "Date Button" };
 
 	/** Called when the activity is first created. */
 	@Override
@@ -34,8 +34,10 @@ public class HelloAndroid extends ListActivity {
 	protected void onListItemClick(ListView parent, View v, int position, long id) {
 		Class activityKlass = null;
 		
-		if ("HelloAndroid".equals(mDemoActivities[position])) {
+		if ("Hello Android".equals(mDemoActivities[position])) {
 			activityKlass = HelloWorld.class;
+		} else if ("Date Button".equals(mDemoActivities[position])) {
+			activityKlass = DateButton.class;
 		}
 		
 		if (activityKlass != null) {
