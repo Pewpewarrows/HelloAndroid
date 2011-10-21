@@ -1,5 +1,7 @@
 package com.pewpewarrows.helloandroid.activities;
 
+import java.util.HashMap;
+
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,15 +12,7 @@ import android.widget.ListView;
 import com.pewpewarrows.helloandroid.R;
 
 public class HelloAndroid extends ListActivity {
-	private ListView mDemoActivityList;
-	private String[] mDemoActivities = { 
-		"Hello Android", 
-		"Date Button" 
-		// TODO: adjustable radio button layout example
-		// TODO: relative layout form example
-		// TODO: table layout form example
-		// TODO: edittext input type options example (also: hooking into "Done" button)
-	};
+	private HashMap<String, Class<?>> mDemoActivities;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -26,26 +20,42 @@ public class HelloAndroid extends ListActivity {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.main);
+		
+		generateDemoActivities();
 
-		ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_list_item_1, mDemoActivities);
+		ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(
+				this,
+				android.R.layout.simple_list_item_1, 
+				mDemoActivities.keySet().toArray(new String[mDemoActivities.size()]));
 
 		setListAdapter(mAdapter);
 	}
 
 	private void generateDemoActivities() {
-		// TODO
+		mDemoActivities = new HashMap<String, Class<?>>();
+		
+		mDemoActivities.put("Hello Android", HelloWorld.class);
+		mDemoActivities.put("Date Button", DateButton.class);
+		
+		// TODO: adjustable radio button layout example
+		// TODO: relative layout form example
+		// TODO: table layout form example
+		// TODO: edittext input type options example (also: hooking into "Done" button)
+		// TODO: multiselect listview example
+		// TODO: spinner control example
+		// TODO: grid layout example
+		// TODO: auto-complete textview example
+		// TODO: gallery view example
+		// TODO: custom listview row.xml example
+		// TODO: dynamic listview row adapter example
+		// TODO: using a layout inflater example
+		// TODO: using convertview for better listview example
 	}
 
 	@Override
 	protected void onListItemClick(ListView parent, View v, int position, long id) {
-		Class activityKlass = null;
-		
-		if ("Hello Android".equals(mDemoActivities[position])) {
-			activityKlass = HelloWorld.class;
-		} else if ("Date Button".equals(mDemoActivities[position])) {
-			activityKlass = DateButton.class;
-		}
+		String[] activities = mDemoActivities.keySet().toArray(new String[mDemoActivities.size()]);
+		Class<?> activityKlass = mDemoActivities.get(activities[position]);
 		
 		if (activityKlass != null) {
 			startActivity(new Intent(HelloAndroid.this, activityKlass));
