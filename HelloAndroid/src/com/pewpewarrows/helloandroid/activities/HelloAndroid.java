@@ -44,12 +44,53 @@ public class HelloAndroid extends ListActivity {
 		// TODO: multiselect listview example
 		// TODO: spinner control example
 		// TODO: grid layout example
-		// TODO: auto-complete textview example
+		// TODO: auto-complete edittext example
 		// TODO: gallery view example
 		// TODO: custom listview row.xml example
 		// TODO: dynamic listview row adapter example
 		// TODO: using a layout inflater example
 		// TODO: using convertview for better listview example
+		
+		// TODO: this:
+		mDemoActivities.put("Fancy listView Holder", ViewHolder.class);
+		
+		// TODO: ratingbar widgets in dynamic listview example
+		// TODO: date and time picker dialogs example
+		// TODO: chronometer example
+		// TODO: tabhost and tabactivity example
+		// TODO: dynamic tab creation example
+		// TODO: viewflipper example
+		// TODO: dynamic viewflipper example
+		// TODO: slidingdrawer example
+		// TODO: embedded webkit (webview) example
+		// TODO: custom webviewclient example
+		// TODO: options + context menu example
+		// TODO: using menu resource xml example
+		// TODO: showing toast messages and alert dialog example
+		// TODO: rotation layout state saving example
+		// TODO: rotation layout save object example
+		// TODO: manual rotation change example
+		// TODO: prevent rotation change example
+		// TODO: background thread and handler example
+		// TODO: asynctask example
+		// TODO: rotation aware asynctask example
+		// TODO: intent filter examples
+		// TODO: broadcast receiver example
+		// TODO: launching intents example
+		// TODO: tabbed internal activity with intents example
+		// TODO: resource strings and formatting example
+		// TODO: styling widgets example
+		// TODO: application and activity themes example
+		// TODO: custom layouts (like Hand of Cards) example
+		// TODO: xml-defined drawable example
+		// TODO: nine-patch bitmap PNG example
+		// TODO: px, mm, in, dip, sp comparison example
+		// TODO: handling wide range of screen sizes and density example
+		// TODO: actionbar example
+		// TODO: fragments example (using EU flags activity from earlier)
+		// TODO: backwards-compatibility and platform changes example
+		// TODO: accessing a static file example
+		// TODO: trivial text editor read/write example
 	}
 
 	@Override
