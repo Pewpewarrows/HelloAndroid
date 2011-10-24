@@ -6,6 +6,10 @@ public abstract class CompatHelper {
 	static private CompatHelper instance = null;
 	
 	static public void init() {
+		if (instance != null) {
+			return;
+		}
+		
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
 			
 		} else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {

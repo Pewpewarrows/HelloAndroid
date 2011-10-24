@@ -91,6 +91,31 @@ public class HelloAndroid extends ListActivity {
 		// TODO: backwards-compatibility and platform changes example
 		// TODO: accessing a static file example
 		// TODO: trivial text editor read/write example
+		// TODO: using a PreferenceActivity example
+		// TODO: Honeycomb preferences example
+		// TODO: custom Preference intent example
+		// TODO: simple SQLite example
+		// TODO: SQLite DB migration example
+		// TODO: building SQLite SELECT queries example
+		// TODO: SQLite CursorAdapter example
+		// TODO: BeanScript / SL4A interpreter example
+		// TODO: loading HttpResponse into WebView example
+		// TODO: loading HttpResponse into ListView example
+		// TODO: using AndroidHttpClient example
+		// TODO: DownloadManager example
+		// TODO: DownloadManager Service example
+		// TODO: Music Player example
+		// TODO: HttpClient Binding to a Service example
+		// TODO: Notification example
+		// TODO: Foreground Notification example
+		// TODO: Custom Permissions example
+		// TODO: Location listening and proximity example
+		// TODO: MapView example
+		// TODO: MapView Overlay example
+		// TODO: MapView Fragments & compatibility example
+		// TODO: Making a phone call example
+		// TODO: Changing Fonts example
+		// TODO: Custom Font example
 	}
 
 	@Override
