@@ -1,14 +1,14 @@
-package com.pewpewarrows.helloandroid.utils;
-
-import com.pewpewarrows.helloandroid.HelloAndroidApplication;
+package com.pewpewarrows.helloandroid.shim;
 
 import android.os.StrictMode;
 
-public class GingerbreadHelper extends CompatHelper {
-	public GingerbreadHelper() {
+public class GingerbreadShim extends FroyoShim {
+	public GingerbreadShim(boolean debug) {
+		super(debug);
+		
 		// Log and kill the application for violating StrictMode during
 		// development
-		if (HelloAndroidApplication.isDebugMode()) {
+		if (debug) {
 			StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
 					.detectAll().penaltyLog().penaltyDeath().build());
 			StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder()
