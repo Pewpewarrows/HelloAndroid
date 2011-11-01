@@ -10,6 +10,8 @@ package com.pewpewarrows.helloandroid;
 public final class C {
 	public static final boolean DEBUG = true;
 	
+	public static final String APP_TAG = "HelloAndroid";
+	
 	/**
 	 * Intentially private. Java has no native way to describe a class that
 	 * should never be instantiated.

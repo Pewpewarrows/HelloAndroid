@@ -1,14 +1,13 @@
 package com.pewpewarrows.helloandroid;
 
-import android.app.Application;
+import com.pewpewarrows.electricsheep.ESApplication;
 
-import com.pewpewarrows.helloandroid.shim.CompatShim;
-
-public class HelloAndroidApplication extends Application {
+public class HelloAndroidApplication extends ESApplication {
+	
 	@Override
 	public void onCreate() {
-		CompatShim.init(C.DEBUG);
-
-		super.onCreate();
+		setupApp(C.APP_TAG);
+		makeCompatible(C.DEBUG);
 	}
+	
 }
